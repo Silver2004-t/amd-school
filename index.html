@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMD School</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="top-bar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">AMD <span>School</span></a>
+      <button class="menu-button" type="button" aria-expanded="false">Menu</button>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome" id="home">
+      <div class="container welcome-content">
+        <p class="small-title">Welcome to AMD School</p>
+        <h1>Learning today,<br><span>leading tomorrow.</span></h1>
+        <p>We help every student learn, grow and find something they are excited about.</p>
+        <a class="button" href="#about">Get to know us</a>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <p class="small-title">A little about us</p>
+      <h2>A school where everyone can grow</h2>
+      <p>AMD School is a friendly place for children to learn new things, ask questions and build confidence. Our teachers and families work together to help students do their best.</p>
+    </section>
+
+    <section class="learning" id="learning">
+      <div class="container section">
+        <p class="small-title">What we offer</p>
+        <h2>Learning at every stage</h2>
+        <div class="cards">
+          <article class="card"><h3>Early Learning</h3><p>A happy start with stories, play and discovery.</p></article>
+          <article class="card"><h3>Primary School</h3><p>Building strong skills and a love of learning.</p></article>
+          <article class="card"><h3>Secondary School</h3><p>Growing knowledge, confidence and independence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact">
+      <div><p class="small-title">Come say hello</p><h2>We would love to hear from you.</h2><p>Send us a message if you would like to know more about AMD School.</p></div>
+      <form class="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button class="button" type="submit">Send message</button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><div class="container footer-content"><p>AMD School · Learn, grow, lead.</p><p>© <span id="year"></span> AMD School</p></div></footer>
+</body>
+</html>
